@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box; /* border-box  --  element ki height n width m border area ya padding dono included ho--- means agar a specific value of h and w k liye hum border size inc kre toh content size should decrease */
+                        /* it is good practice to use border-box , helps in size measurement */
+}
+
+/* 1st PANEL */
+
+/* clone bnate time we can inspect and see in original website the dimensions and vo same hum set kr skte h*/
+/* to check for color (shortcut)--- use canva (color picker color pick krke dete h)  else can simply inspect and check the color*/
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex; /* agar hum chahe ki jitne bhi div h in navbar vo saare ek hi line m navbar k andar dikhe */
+    align-items: center; /* will align all the elements in navbar at the centre vertically */
+
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 112px;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 112px;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border:1.5px solid white;
+}
+
+/*box-2*/
+.add-icon{
+    display: flex; /* iske andar ka para and icon hme ekk hi line m chiye the hence humne isse flex bna diya jiske andr vo do elements the */
+}
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.8rem; /* rem- is used as it alters the size of the font acc. to the root */
+    margin-left: 15px;
+}
+
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+    font-weight: 600;
+}
+
+/* box-3*/
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly; /* hame saari things evenly spread hui hui dikh jaae */
+    width: 620px;
+    height: 40px;
+    background-color: aqua; /* y input and select tag pr toh apply nhi hogi hence sirf div tag pr hi dikhegi web page pr */
+    border-radius: 4px; /* khali left se dikhega..right k liye hame select vale ko dena h border radius */
+    
+}
+
+.nav-search:hover{
+    border: 2px solid rgb(236, 183, 10);
+}
+
+.search-select{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border: none; /* jo humne hr box pr border lga rkha tha vo iske liye htt jaaega */
+}
+
+.search-input{
+    width: 100%; /* jitna bhi bacha hua area hoga in it's flex container vo saara y select-input le lega */
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;/* to bring the search icon */
+    align-items: center;  /*in the centre of the div box */
+
+    font-size: 1.2rem; /* to increase size of the search icon*/
+    color: #0f1111;
+    background-color: rgb(236, 183, 10);
+
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/* box-4 */
+span{
+    font-size: 0.8rem;
+}
+
+.nav-sec{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* box-5*/
+/* below syntax will ensure ki nav-cart vale icon pr hi below styling lge aur koi icon pr na lge */
+.nav-cart i{
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+}
+
+.nav-cart p{
+    padding-top: 14px;
+}
+
+/* ------------------------------------------------------- */
+
+/* 2nd PANEL */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-tags{
+    width: 70%;
+    font-size: 0.85rem;
+   
+
+}
+
+.panel-tags p{
+    display: inline;
+    margin-left: 15px;
+}
+
+
+.panel-all{
+    display: flex;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------- */
+
+/* HERO SECTION */
+
+.hero-section{
+    background-image: url("hero_image.jpg"); /* i image tab tkk nhi dikhegi jab tkk hum iss box ko height n width na dede */
+    background-size: cover;
+    height: 300px; 
+
+    display: flex; /* to align the hero msg at the bottom of hero section */
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg{
+    background-color: white;
+    height: 40px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+
+}
+
+.hero-msg a{
+    color: #007185;
+}
+
+
+/*------------------------------------------------------*/
+
+/* SHOP SECTION */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap; /* to wrap the images ki saare boxes ek hi line m na aae and size k hisaab se adjust ho jaae */
+    justify-content: space-evenly; /* used for evenly spaced boxes */
+    background-color: #d4d7d9; /* in original website image neeche tkk aa rhi h but hum vo nhi krenge rather hum apna background color lga denge clone m */
+}
+
+.box{
+    height: 330px;
+    width: 23%;
+    background-color: white;
+
+    padding: 20px 0px 15px;
+    margin-top: 10px;
+}
+
+.box-image{
+    height: 250px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content{
+    margin-left: 12px;
+    margin-right: 12px;
+    
+}
+
+.box-content a{
+    color:#007185;
+    font-size: 0.81rem;
+}
+
+/*---------------------------------------------------- */
+
+/* FOOTER */
+
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex; /* to bring the ul lists in songlr line horizontally */
+    justify-content: space-evenly;
+    padding-top: 40px;
+    
+}
+
+ul a{
+    display: block; /* saare ul k blocks vertically ek hi line m aa jaaenge */
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #dddddd;
+
+}
+
+ul p{
+    font-weight: 700;
+}
+
+
+.foot-panel3{
+    background-color: #222f3d;
+    border-top: 0.5px solid white;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 70px;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+.pages{
+    padding-top: 25px;
+}
+
+.copyright{
+    padding-top: 5px;
+}
